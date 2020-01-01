@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+
+<head>
+    <title>Webpage Layout</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="/css/index.css" rel="stylesheet" type="text/css">
+    <link href="/css/main.css" rel="stylesheet" type="text/css">
+</head>
+
+<body>
+    <header id="main-header">
+        <div class="container">
+            <h1>Popi's Kitchen</h1>
+        </div>
+    </header>
+    <div class="container">
+
+        <nav id="navbar">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="services.html">Services</a></li>
+                <li><a href="contactUs.html">Contact us</a></li>
+            </ul>
+
+        </nav>
+        <section id="showcase">
+            <div class="slideShow-container">
+                <script>
+                    var i = 0;
+                    var images = [];
+                    var time = 3000;
+                    /*image list*/
+
+                    images[0] = '/images/main.jpg';
+                    images[1] = '/images/cater1.jpg';
+                    images[2] = '/images/colorfulMuffin.jpg';
+                    images[3] = '/images/cater2.jpg';
+                    images[4] = '/images/mixCookie.jpg';
+                    images[5] = '/images/cater3.jpg';
+                    /*change image*/
+
+                    function changeImg() {
+                        document.slides.src = images[i];
+                        if (i < images.length - 1) {
+                            i++;
+                        } else {
+                            i = 0;
+                        }
+                        setTimeout("changeImg()", time);
+                    }
+                    window.onload = changeImg;
+                </script>
+                <img name="slides" width="500" height="450" />
+
+            </div>
+            <div id="order-container">
+                <ul>
+                    <li>Get your tasty cookie now</li>
+                    <li>call:0828587854</li>
+                    <li>or call:0828587843</li>
+                    <li>first come first served</li>
+                </ul>
+            </div>
+        </section>
+        <section id="main">
+            <h1>Welcome</h1>
+            <p>
+                We bake all sorts of delicious cookies and cook a great variety of food to cater for your small to large functions. Popi's Kitchen is based in Atteridgeville, we sell tasty cookies in Pretoria and surrounding areas. Our cookie packages are convenient
+                for when you are hosting a function or when you want to show some support to a friend or family member who is having a function. Cookie deliveries are made for a small additional fee starting from R20 depending on how far away from our
+                Kitchen
+            </p>
+            <p>Our food catering, we cook delicious menus of your choosing at an affordable price for your business functions, weddings, funerals all other types of functions you can think of.When it comes to food catering delivery costs are included in
+                the total cost.</p>
+        </section>
+        <footer id="foot-nav">
+            <ul>
+                <li class="one"><a href="index.html">Home</a></li>
+                <li class="two"><a href="services.html">Services</a></li>
+                <li class="three"><a href="contactUs.html">Contact us</a></li>
+            </ul>
+        </footer>
+        <footer id="main-footer">
+            <p>Copyright &copy; 2019 Popi's Kitchen</p>
+        </footer>
+        <footer id="signature-footer">created by Kgatla A.L</footer>
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,79 @@
+    /*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+    /* 
+    Created on : 31 Aug 2019, 10:48:36 PM
+    Author     : kgatla
+*/
+    
+    .container {
+        width: 80%;
+        margin: auto;
+        overflow: hidden;
+        /*so that if there is text overflow no scroll bar will apear*/
+    }
+    
+    #showcase {
+        min-height: 400px;
+        /*makes background image responsive*/
+        width: 90%;
+        display: flex;
+        flex-wrap: wrap;
+        margin-left: 10%;
+    }
+    
+    #main {
+        float: left;
+        width: 100%;
+        padding: 0 30px;
+        box-sizing: border-box;
+    }
+    
+    .slideShowcontainer {
+        flex: 2;
+        flex-basis: 35%;
+    }
+    
+    #order-container {
+        flex: 1;
+        flex-basis: 35%;
+    }
+    
+    #order-container ul {
+        list-style: none;
+        line-height: 1em;
+        color: white;
+        font-size: 45px;
+    }
+    /*media quary*/
+    
+    @media screen and (max-width: 880px) {
+        img {
+            width: 99%;
+            height: 350px;
+        }
+        .container {
+            width: 90%;
+        }
+        #order-container ul {
+            font-size: 30px;
+            margin-bottom: 0;
+            padding-bottom: 5px;
+        }
+        #showcase {
+            margin-left: 0;
+        }
+    }
+    /*media query*/
+    
+    @media screen and (max-width: 480px) {
+        .container {
+            width: 100%;
+        }
+        img {
+            height: 280px;
+            margin-left: 5%;
+        }
+    }

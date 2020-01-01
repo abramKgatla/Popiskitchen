@@ -1,0 +1,62 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+
+
+/* 
+    Created on : 02 Sep 2019, 1:45:57 PM
+    Author     : al
+*/
+
+.container {
+    width: 80%;
+    margin: auto;
+    overflow: auto;
+    /*so that if there is text overflow no scroll bar will apear*/
+}
+
+.image-container {
+    border: 2px white solid;
+    min-width: 49%;
+    max-width: 49%;
+    /*makes page responsive*/
+    display: inline-block;
+    /*allows staking in what ever number depends on width percentage*/
+}
+
+.image-frame {
+    min-width: 40%;
+    margin-left: 0%;
+}
+
+.image-para {
+    padding-left: 15%;
+    font-weight: bold;
+    font-size: 20px;
+}
+
+
+/*media quary*/
+
+@media screen and (max-width: 780px) {
+    .image-container {
+        min-width: 99%;
+    }
+    img {
+        height: 300px;
+    }
+}
+
+
+/*media quary*/
+
+@media screen and (max-width: 350px) {
+    .container {
+        width: 90%;
+    }
+    img {
+        height: 250px;
+    }
+}

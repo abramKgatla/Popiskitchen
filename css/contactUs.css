@@ -1,0 +1,10 @@
+.container {
+    width: 80%;
+    margin: auto;
+    overflow: auto;
+    /*so that if there is text overflow no scroll bar will apear*/
+}
+
+.order-form {
+    line-height: 2em;
+}

@@ -1,0 +1,52 @@
+body {
+    background-color: #cc3300;
+    color: #003333;
+    font-family: Ariel, Helvetica, sans-serif;
+    font-size: 16px;
+    line-height: 1.6em;
+    margin: 0;
+}
+
+#main-header {
+    background-color: #cc3300;
+    color: white;
+}
+
+#navbar {
+    background-color: coral;
+    color: black;
+}
+
+#navbar ul {
+    display: grid;
+    grid: auto / auto auto auto;
+    padding: 0;
+    list-style: none;
+    /*removes the bullets*/
+}
+
+#navbar a {
+    font-size: 18px;
+    text-decoration: none;
+    color: blue;
+    padding-right: 15px;
+}
+
+#main-footer {
+    text-align: center;
+    margin-top: 10px;
+}
+
+#signature-footer {
+    text-align: right;
+    margin-top: 5px;
+}
+
+#foot-nav ul {
+    list-style: none;
+}
+
+#foot-nav ul {
+    display: grid;
+    grid: auto / auto auto auto
+}
